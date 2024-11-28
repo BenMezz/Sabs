@@ -1,0 +1,174 @@
+img {
+    width: 20vw;
+    height: 20vw;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+img:hover {
+    scale: 105%;
+}
+
+h2 {
+    color: #FFE3E3;
+    background-color: #3e4772;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Playwrite DK Uloopet", cursive;
+    text-shadow: 2px 2px #001042;
+}
+
+h2::selection {
+    background-color: #FFE3E3;
+    color: #3e4772;
+    text-shadow: #fda6a6 2px 2px;
+}
+
+.side-content > *::selection {
+    background-color: #FFE3E3;
+    color: #3e4772;
+}
+
+.main-content > *::selection {
+    color: #FFE3E3;
+    background-color: #3e4772;
+}
+
+.side-content {
+    opacity: 0;
+    padding: 0 10px;
+    margin: 0 10px;
+    display: none;
+    background-color: #3e4772;
+    color: white;
+    border-radius: 10px;
+    font-size: 2vw;
+    height: 40vw;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+}
+
+.option-container-container {
+    background-color: #FFE3E3;
+    width: 100%;
+    height: 25vw;
+    margin: 0;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+    background-color: #789DBC;
+    margin: 0;
+}
+
+.option-container {
+    position: absolute;
+    top: 2.5vw;
+}
+
+.main-content {
+    display: none;
+    opacity: 0;
+}
+
+.nav-bar {
+    list-style-type: none;
+    background-color: #3e4772;
+    overflow: hidden;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar > li {
+    padding: 10px;
+    color: #FFE3E3;
+    text-shadow: #001042 -2px 2px 1px;
+    cursor: pointer;
+    float: right;
+    font-family: arial;
+}
+
+.nav-bar > li:hover {
+    background-color: #3e4772;
+}
+
+.about-me {
+    color: white;
+    display: flex;
+    column-gap: 20px;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.about-me > li {
+    background-color: #3e4772;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    height: min-content;
+    font-size: 20px;
+}
+
+.site-content {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input, textarea {
+    font-size:large;
+    margin: 10px;
+    padding: 6px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: arial;
+}
+
+input:focus {
+    border: 2px solid #001042;
+    margin: 8px;
+}
+
+.contact-form {
+    width: min-content;
+}
+
+h1 {
+    color: #001042;
+    text-align: center;
+    font-family: arial;
+    text-shadow: #789DBC 0 0 5px;
+    margin: 0;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 50px;
+  }
+  
+.hero {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/575/431/large_2x/cute-nature-floral-flower-leaf-minimalist-girly-background-wallpaper-vector.jpg");
+    background-repeat: no-repeat;
+    height: calc(100vh - 43.2px);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+  }
