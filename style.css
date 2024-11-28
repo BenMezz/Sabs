@@ -82,7 +82,7 @@ body {
     list-style-type: none;
     background-color: #3e4772;
     overflow: hidden;
-    font-size: 20px;
+    font-size: 15px;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -91,34 +91,39 @@ body {
 }
 
 .nav-bar > li {
-    padding: 10px;
+    padding: calc(30px - 1vw) 10px;
     color: #FFE3E3;
-    text-shadow: #001042 -2px 2px 1px;
+    text-shadow: #001042 -2px 2px 2px;
     cursor: pointer;
     float: right;
     font-family: arial;
+    transition: 0.2s ease-out;
 }
 
 .nav-bar > li:hover {
-    background-color: #3e4772;
+    color: #3e4772;
+    background-color: #FFE3E3;
+    text-shadow: #fda6a6 -2px 2px 2px;
 }
 
 .about-me {
     color: white;
     display: flex;
-    column-gap: 20px;
+    column-gap: 1vh;
     list-style-type: none;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 20px;
+    padding: 0;
 }
 
 .about-me > li {
     background-color: #3e4772;
     border-radius: 10px;
     padding: 10px;
-    width: 200px;
+    width: 40vw;
+    max-width: 200px;
     height: min-content;
     font-size: 20px;
 }
@@ -133,7 +138,7 @@ a {
 }
 
 input, textarea {
-    font-size:large;
+    font-size: large;
     margin: 10px;
     padding: 6px;
     border: none;
@@ -142,9 +147,9 @@ input, textarea {
     font-family: arial;
 }
 
-input:focus {
-    border: 2px solid #001042;
-    margin: 8px;
+input:focus, textarea:focus {
+    border: 4px double #001042;
+    margin: 6px;
 }
 
 .contact-form {
